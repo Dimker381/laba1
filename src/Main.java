@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        lab1 tasks = new lab1(); // один объект для всех задач
+        Lab1 tasks = new Lab1(); // один объект для всех задач
 
         // сумма двух последних цифр
         System.out.print("Введите число (не меньше двух цифр): ");
@@ -60,7 +60,8 @@ public class Main {
         int t1 = scanner.nextInt();
         int t2 = scanner.nextInt();
         int t3 = scanner.nextInt();
-        System.out.println("Можно ли сложить два числа и получить третье? " + tasks.sum3(t1, t2, t3));
+        System.out.println("Можно ли сложить два числа и получить третье? "
+                + tasks.sum3(t1, t2, t3));
 
         // возраст
         System.out.print("\nВведите возраст: ");
@@ -125,7 +126,9 @@ public class Main {
         int pos = scanner.nextInt();
         int[] newArr = tasks.add(arr2, insNum, pos);
         System.out.print("Новый массив: ");
-        for (int num : newArr) System.out.print(num + " ");
+        for (int num : newArr) {
+            System.out.print(num + " ");
+        }
         System.out.println();
 
         // реверс массива
@@ -138,7 +141,9 @@ public class Main {
         }
         tasks.reverse(arr3);
         System.out.print("Реверс: ");
-        for (int num : arr3) System.out.print(num + " ");
+        for (int num : arr3) {
+            System.out.print(num + " ");
+        }
         System.out.println();
 
         // объединение массивов
@@ -158,7 +163,9 @@ public class Main {
         }
         int[] concatArr = tasks.concat(arr4, arr5);
         System.out.print("Объединённый массив: ");
-        for (int num : concatArr) System.out.print(num + " ");
+        for (int num : concatArr) {
+            System.out.print(num + " ");
+        }
         System.out.println();
 
         // удалить негатив
@@ -171,7 +178,9 @@ public class Main {
         }
         int[] noNeg = tasks.deleteNegative(arr6);
         System.out.print("Массив без отрицательных: ");
-        for (int num : noNeg) System.out.print(num + " ");
+        for (int num : noNeg) {
+            System.out.print(num + " ");
+        }
         System.out.println();
 
         scanner.close();
